@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Inserir Pordutos</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    </head>
+    <body>  
+        <div class="container col-md-8">
+            <h1>Cadastrar Novo Produto</h1>
+            <form id="frmNovoProd" name="frmNovoProd" method="POST" action="insProd.php">
+                <div class="form-group">
+                    <label for="lblMarc">Marca</label>
+                    <input type="text"class="form-control" id="txtMarc" name="txtMarc" 
+                        placeholder="Infrome a Marca do Produto"> 
+                <div class="form-group">
+                     <label for="lblMod">Modelo</label>
+                     <input type="text"class="form-control" id="txtMod" name="txtMod" 
+                        placeholder="Infrome o Modelo do Produto">
+                <div class="form-group">
+                     <label for="lblQtd">Quantidade</label>
+                     <input type="text"class="form-control col-md-4" id="txtQtd" name="txtQtd" 
+                        placeholder="Infrome a Quantidade do Produto">  
+                <div class="form-group">
+                     <label for="lblVal">Valor</label>
+                     <input type="text"class="form-control col-md-4" id="txtVal" name="txtVal" 
+                        placeholder="Infrome o Valor do Produto">                 
+                </div>
+                <input type="submit" id="btEnviar" name="btEnviar" class="btn btn-dark" value="Gravar">
+                <input type="reset" id="btLimpar" name="btLimpar" class="btn btn-dark" value="Limpar">
+                <input type="button" id="btCancelar" name="btCancelar" class="btn btn-danger" value="Cancelar"
+                                        onclick="javascript:location.href='lstProd.php'">
+
+            </form>
+        
+        </div>
+    </body>
+</html>
